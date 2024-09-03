@@ -1,0 +1,40 @@
+{
+  "name": "openmusic",
+  "version": "1.0.0",
+  "description": "Backend fundamental submission pertama dicoding",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "nodemon ./src/app.js",
+    "start": "node ./src/app.js",
+    "migrate": "node-pg-migrate",
+    "lint": "eslint ./"
+  },
+  "keywords": [
+    "dicoding",
+    "backend",
+    "fundamental"
+  ],
+  "author": "budiliauw87",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^20.1.2",
+    "@hapi/inert": "^7.1.0",
+    "@hapi/jwt": "^3.2.0",
+    "amqplib": "^0.10.4",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^10.0.0",
+    "joi": "^17.4.0",
+    "nanoid": "^3.1.22",
+    "node-pg-migrate": "^5.9.0",
+    "pg": "^8.6.0",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^9.9.0",
+    "eslint-config-dicodingacademy": "^0.9.4",
+    "globals": "^15.9.0",
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "consumer_music",
+  "version": "1.0.0",
+  "description": "consumer tugas dicoding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js",
+    "start-dev": "nodemon ./src/index.js",
+    "lint": "eslint ./"
+  },
+  "author": "budiliauw87",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.9.1",
+    "dotenv": "^10.0.0",
+    "nodemailer": "^6.9.14",
+    "pg": "^8.6.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "^9.9.0",
+    "eslint-config-dicodingacademy": "^0.9.4",
+    "globals": "^15.9.0",
+    "nodemon": "^3.1.4"
+  }
+}
