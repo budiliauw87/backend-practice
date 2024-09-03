@@ -102,7 +102,7 @@ class AlbumHandler {
     if (totalLikeCache === null){
       const totalLike = await this._likeService.getTotalLikes(albumId);
       //save to db
-      await this._cacheService.set(`likes:${albumId}`, JSON.stringify(totalLike));
+      await this._cacheService.set(`likes:${albumId}`, JSON.stringify(totalLike), 1800);
       return h.response({
         status: 'success',
         message: 'Ok',
